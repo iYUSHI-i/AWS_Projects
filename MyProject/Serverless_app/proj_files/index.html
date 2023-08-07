@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Serverless application project for Medicine Reminders">
+  <meta name="author" content="Medicine Reminders">
+  <title>Medicine Reminders</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- JS Stuff -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+</head>
+
+<body style="padding-top: 40px; padding-bottom: 40px; background-color: #eee;">
+  <div class="container">
+    <form class="form-signin"
+      style="max-width: 480px; padding: 15px; margin: 0 auto; background-color: #fff; border: 1px solid #dcdcdc; border-radius: 5px;">
+      <img src="medicine2.png" alt="medicine reminder"
+        style="max-width: 100%; height: auto; display: block; margin: 0 auto; margin-bottom: 20px;">
+      <center>
+        <h2 class="form-signin-heading"
+          style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">CloudMed</h2>
+      </center>
+      <div id="error-message" style="color: red; font-size: 15px; font-weight: bold;"></div>
+      <label for="waitSeconds" class="sr-only"></label>
+      <p style="font-size: 16px;">Set your medicine reminder:</p>
+      <input type="text" id="waitSeconds" class="form-control"
+        placeholder="How long until the next dose (in seconds) ...."
+        style="position: relative; height: auto; box-sizing: border-box; padding: 10px; font-size: 16px; margin-bottom: 10px;">
+      <label for="message" class="sr-only">Medicine reminder message (Required)</label>
+      <input type="text" id="message" class="form-control" placeholder="Medicine reminder message (Required)"
+        style="position: relative; height: auto; box-sizing: border-box; padding: 10px; font-size: 16px; margin-bottom: 10px;">
+      <hr style="border-top: solid black;">
+      <p style="font-size: 16px;">Contact information (optional):</p>
+      <label for="email" class="sr-only">Contact email</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter email for contact (optional)"
+        style="position: relative; height: auto; box-sizing: border-box; padding: 10px; font-size: 16px; margin-bottom: 10px;">
+      <hr style="border-top: solid black;">
+      <h3 style="text-align: center; font-size: 18px; font-weight: bold;">Medicine Reminders under Control<br><br></h3>
+      <button id="emailButton" class="btn btn-md btn-primary btn-block" type="submit"
+        style="background-color: #007bff; border-color: #007bff; display: block; width: 100%;">Send Medicine
+        Reminder</button>
+      <div id="results-message" style="color: green; font-size: 15px; font-weight: bold;"></div>
+    </form>
+  </div> <!-- /container -->
+  <script src="serverless.js"></script>
+</body>
+
+</html>
