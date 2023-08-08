@@ -47,11 +47,15 @@ Stage 4: Testing the Application
   
 The application allows users to schedule and send reminder emails via a user-friendly web interface. It leverages AWS services such as SES, Lambda, Step Functions,
 SNS, and API Gateway to create a seamless serverless experience.
+![image](https://github.com/iYUSHI-i/AWS_Projects/assets/92771062/1e75eee8-a80c-41bb-90ef-a762696eaeb3)
+
+
 StateFunction:
+
+
 ![image](https://github.com/iYUSHI-i/AWS_Projects/assets/92771062/2ca813e1-42ca-4574-9a60-a68611d7fbf8)
 
 
-Success Screenshot.
 ![image](https://github.com/iYUSHI-i/AWS_Projects/assets/92771062/ec86bab3-3c6f-4623-ba90-6d19a28524fe)
 
 Reference: https://github.com/MoRoble/AWS-Projects/tree/main/Serverless_app
