@@ -107,7 +107,7 @@ def lambda_handler(event, context):
   •	Upload front-end files including HTML, CSS, and JavaScript.
 
   
-Stage 4: Testing the Application
+## Stage 4: Testing the Application
 
   •	Access the S3-hosted application.
   
